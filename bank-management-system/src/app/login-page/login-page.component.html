@@ -1,0 +1,31 @@
+<h3>Login Form</h3>  
+ 
+<div class="row" style="margin-left: 560px;"> 
+
+<form  [formGroup] ="userLoginDetails">  
+  
+  
+    <div class="row" style="margin-top: 50px;">
+    <div class=" col-md-offset-1 col-md-4">  
+        <label for="email"> Email </label>  
+        <input formControlName="email" class="form-control" type="text" required>   
+    </div> 
+    </div> 
+  
+  
+    <div class="row" style="margin-top: 40px;">
+    <div class=" col-md-offset-1 col-md-4">  
+        <label for="password"> Password </label>  
+        <input formControlName="password" class="form-control" type="password" required>   
+    </div>  
+    </div>
+  
+    <div class="row" style="margin-top: 40px; margin-left: 75px;">
+    <div class="col-md-offset-1 col-md-4">  
+        <button [disabled]='!userLoginDetails.valid'  class="btn btn-md btn-primary btn-style"  >Login</button>  
+    </div> 
+    </div> 
+  
+  
+</form>  
+</div>
